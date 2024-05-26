@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 631.0, 181.0, 546.0, 692.0 ],
+		"rect" : [ 631.0, 181.0, 659.0, 692.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -260,38 +260,8 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "list" ],
 					"patching_rect" : [ 51.0, 396.0, 144.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"dur" : 						{
-							"label" : "dur",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"OnOff" : 						{
 							"label" : "OnOff",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"azimuth" : 						{
-							"label" : "azimuth",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"elevation" : 						{
-							"label" : "elevation",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"randEl" : 						{
-							"label" : "randEl",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"maxBin" : 						{
-							"label" : "maxBin",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -302,14 +272,14 @@
 							"parsestring" : ""
 						}
 ,
-						"randAz" : 						{
-							"label" : "randAz",
+						"attTypeDown" : 						{
+							"label" : "attTypeDown",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"density" : 						{
-							"label" : "density",
+						"randEl" : 						{
+							"label" : "randEl",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -320,14 +290,44 @@
 							"parsestring" : ""
 						}
 ,
+						"azimuth" : 						{
+							"label" : "azimuth",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"randAz" : 						{
+							"label" : "randAz",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"maxBin" : 						{
+							"label" : "maxBin",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"attTypeUp" : 						{
 							"label" : "attTypeUp",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"attTypeDown" : 						{
-							"label" : "attTypeDown",
+						"dur" : 						{
+							"label" : "dur",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"elevation" : 						{
+							"label" : "elevation",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"density" : 						{
+							"label" : "density",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1883,7 +1883,7 @@
 							}
 ,
 							"randAz" : 							{
-								"value" : 1.17
+								"value" : 0.0
 							}
 ,
 							"format" : 							{
@@ -1895,15 +1895,15 @@
 							}
 ,
 							"attTypeDown" : 							{
-								"value" : 3.0
+								"value" : 1.0
 							}
 ,
 							"attTypeUp" : 							{
-								"value" : 4.0
+								"value" : 1.0
 							}
 ,
 							"density" : 							{
-								"value" : 400.0
+								"value" : 1.0
 							}
 ,
 							"elevation" : 							{
@@ -1915,11 +1915,11 @@
 							}
 ,
 							"maxBin" : 							{
-								"value" : 237.0
+								"value" : 1023.0
 							}
 ,
 							"minBin" : 							{
-								"value" : 237.0
+								"value" : 1.0
 							}
 ,
 							"dur" : 							{
@@ -3464,7 +3464,7 @@
 										}
 ,
 										"randAz" : 										{
-											"value" : 1.17
+											"value" : 0.0
 										}
 ,
 										"format" : 										{
@@ -3476,15 +3476,15 @@
 										}
 ,
 										"attTypeDown" : 										{
-											"value" : 3.0
+											"value" : 1.0
 										}
 ,
 										"attTypeUp" : 										{
-											"value" : 4.0
+											"value" : 1.0
 										}
 ,
 										"density" : 										{
-											"value" : 400.0
+											"value" : 1.0
 										}
 ,
 										"elevation" : 										{
@@ -3496,11 +3496,11 @@
 										}
 ,
 										"maxBin" : 										{
-											"value" : 237.0
+											"value" : 1023.0
 										}
 ,
 										"minBin" : 										{
-											"value" : 237.0
+											"value" : 1.0
 										}
 ,
 										"dur" : 										{
