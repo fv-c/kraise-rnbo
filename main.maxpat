@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 631.0, 181.0, 659.0, 692.0 ],
+		"rect" : [ 859.0, 185.0, 659.0, 692.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -266,44 +266,8 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "list" ],
 					"patching_rect" : [ 51.0, 396.0, 144.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"azimuth" : 						{
-							"label" : "azimuth",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"elevation" : 						{
-							"label" : "elevation",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"OnOff" : 						{
-							"label" : "OnOff",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"randEl" : 						{
-							"label" : "randEl",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"attTypeUp" : 						{
 							"label" : "attTypeUp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"minBin" : 						{
-							"label" : "minBin",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"randAz" : 						{
-							"label" : "randAz",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -326,14 +290,50 @@
 							"parsestring" : ""
 						}
 ,
-						"attTypeDown" : 						{
-							"label" : "attTypeDown",
+						"azimuth" : 						{
+							"label" : "azimuth",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
 						"maxBin" : 						{
 							"label" : "maxBin",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"minBin" : 						{
+							"label" : "minBin",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"elevation" : 						{
+							"label" : "elevation",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"OnOff" : 						{
+							"label" : "OnOff",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"randEl" : 						{
+							"label" : "randEl",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"attTypeDown" : 						{
+							"label" : "attTypeDown",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"randAz" : 						{
+							"label" : "randAz",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -1889,7 +1889,7 @@
 							}
 ,
 							"randAz" : 							{
-								"value" : 0.0
+								"value" : 2.2
 							}
 ,
 							"format" : 							{
@@ -1897,7 +1897,7 @@
 							}
 ,
 							"randEl" : 							{
-								"value" : 0.0
+								"value" : 6.283185307179586
 							}
 ,
 							"attTypeDown" : 							{
@@ -1905,23 +1905,23 @@
 							}
 ,
 							"attTypeUp" : 							{
-								"value" : 5.0
+								"value" : 1.0
 							}
 ,
 							"density" : 							{
-								"value" : 500.0
+								"value" : 200.0
 							}
 ,
 							"elevation" : 							{
-								"value" : 0.0
+								"value" : 0.17
 							}
 ,
 							"OnOff" : 							{
-								"value" : 0.0
+								"value" : 1.0
 							}
 ,
 							"maxBin" : 							{
-								"value" : 199.0
+								"value" : 529.0
 							}
 ,
 							"minBin" : 							{
@@ -1929,15 +1929,15 @@
 							}
 ,
 							"dur" : 							{
-								"value" : 1.0
+								"value" : 2.0
 							}
 ,
 							"attPer" : 							{
-								"value" : 0.1
+								"value" : 0.5
 							}
 ,
 							"azimuth" : 							{
-								"value" : 0.0
+								"value" : 0.4
 							}
 ,
 							"__presetid" : "kraise"
@@ -3470,7 +3470,7 @@
 										}
 ,
 										"randAz" : 										{
-											"value" : 0.0
+											"value" : 2.2
 										}
 ,
 										"format" : 										{
@@ -3478,7 +3478,7 @@
 										}
 ,
 										"randEl" : 										{
-											"value" : 0.0
+											"value" : 6.283185307179586
 										}
 ,
 										"attTypeDown" : 										{
@@ -3486,23 +3486,23 @@
 										}
 ,
 										"attTypeUp" : 										{
-											"value" : 5.0
+											"value" : 1.0
 										}
 ,
 										"density" : 										{
-											"value" : 500.0
+											"value" : 200.0
 										}
 ,
 										"elevation" : 										{
-											"value" : 0.0
+											"value" : 0.17
 										}
 ,
 										"OnOff" : 										{
-											"value" : 0.0
+											"value" : 1.0
 										}
 ,
 										"maxBin" : 										{
-											"value" : 199.0
+											"value" : 529.0
 										}
 ,
 										"minBin" : 										{
@@ -3510,15 +3510,15 @@
 										}
 ,
 										"dur" : 										{
-											"value" : 1.0
+											"value" : 2.0
 										}
 ,
 										"attPer" : 										{
-											"value" : 0.1
+											"value" : 0.5
 										}
 ,
 										"azimuth" : 										{
-											"value" : 0.0
+											"value" : 0.4
 										}
 ,
 										"__presetid" : "kraise"
