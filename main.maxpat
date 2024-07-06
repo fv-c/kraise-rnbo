@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 859.0, 185.0, 659.0, 692.0 ],
+		"rect" : [ 232.0, 174.0, 530.0, 770.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,67 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-33",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 100.0, 364.0, 52.0, 22.0 ],
+					"text" : "r~ audio"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.015686274509804, 0.694117647058824, 0.0, 1.0 ],
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 247.0, 76.0, 54.0, 22.0 ],
+					"text" : "s~ audio"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"basictuning" : 440,
+					"data" : 					{
+						"clips" : [ 							{
+								"absolutepath" : "duduk.aif",
+								"filename" : "duduk.aif",
+								"filekind" : "audiofile",
+								"id" : "u949002842",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+ ]
+					}
+,
+					"followglobaltempo" : 0,
+					"formantcorrection" : 0,
+					"id" : "obj-6",
+					"maxclass" : "playlist~",
+					"mode" : "basic",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"originallength" : [ 0.0, "ticks" ],
+					"originaltempo" : 120.0,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 247.0, 36.0, 150.0, 30.0 ],
+					"pitchcorrection" : 0,
+					"quality" : "basic",
+					"timestretch" : [ 0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "newobj",
@@ -178,42 +239,6 @@
 			}
 , 			{
 				"box" : 				{
-					"basictuning" : 440,
-					"data" : 					{
-						"clips" : [ 							{
-								"absolutepath" : "cherokee.aif",
-								"filename" : "cherokee.aif",
-								"filekind" : "audiofile",
-								"id" : "u142006066",
-								"loop" : 1,
-								"content_state" : 								{
-									"loop" : 1
-								}
-
-							}
- ]
-					}
-,
-					"followglobaltempo" : 0,
-					"formantcorrection" : 0,
-					"id" : "obj-4",
-					"maxclass" : "playlist~",
-					"mode" : "basic",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"originallength" : [ 0.0, "ticks" ],
-					"originaltempo" : 120.0,
-					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 366.0, 333.0, 150.0, 30.0 ],
-					"pitchcorrection" : 0,
-					"quality" : "basic",
-					"timestretch" : [ 0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"autosave" : 1,
 					"id" : "obj-2",
 					"inletInfo" : 					{
@@ -266,50 +291,8 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "list" ],
 					"patching_rect" : [ 51.0, 396.0, 144.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"attTypeUp" : 						{
-							"label" : "attTypeUp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"density" : 						{
-							"label" : "density",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"attPer" : 						{
-							"label" : "attPer",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"dur" : 						{
-							"label" : "dur",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"azimuth" : 						{
-							"label" : "azimuth",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"maxBin" : 						{
 							"label" : "maxBin",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"minBin" : 						{
-							"label" : "minBin",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"elevation" : 						{
-							"label" : "elevation",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -332,8 +315,50 @@
 							"parsestring" : ""
 						}
 ,
+						"attTypeUp" : 						{
+							"label" : "attTypeUp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"elevation" : 						{
+							"label" : "elevation",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"minBin" : 						{
+							"label" : "minBin",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"azimuth" : 						{
+							"label" : "azimuth",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"attPer" : 						{
+							"label" : "attPer",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"dur" : 						{
+							"label" : "dur",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"randAz" : 						{
 							"label" : "randAz",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"density" : 						{
+							"label" : "density",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -3904,17 +3929,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
-					"order" : 0,
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"order" : 1,
-					"source" : [ "obj-4", 0 ]
+					"source" : [ "obj-33", 0 ]
 				}
 
 			}
@@ -3929,6 +3945,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -3963,7 +3986,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "cherokee.aif",
+				"name" : "duduk.aif",
 				"bootpath" : "C74:/media/msp",
 				"type" : "AIFF",
 				"implicit" : 1
