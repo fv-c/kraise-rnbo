@@ -40,18 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 361.0, 82.0, 44.0, 22.0 ],
-					"text" : "noise~"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"autosave" : 1,
 					"bgmode" : 0,
 					"border" : 0,
@@ -90,7 +78,7 @@
 						"subtype" : "Undefined",
 						"embed" : 1,
 						"snapshot" : 						{
-							"pluginname" : "binauralDecoder.vstinfo",
+							"pluginname" : "BinauralDecoder.vstinfo",
 							"plugindisplayname" : "BinauralDecoder",
 							"pluginsavedname" : "",
 							"pluginsaveduniqueid" : 0,
@@ -107,12 +95,12 @@
 									"version" : 2,
 									"minorversion" : 0,
 									"name" : "BinauralDecoder",
-									"origin" : "binauralDecoder.vstinfo",
+									"origin" : "BinauralDecoder.vstinfo",
 									"type" : "VST",
 									"subtype" : "AudioEffect",
 									"embed" : 0,
 									"snapshot" : 									{
-										"pluginname" : "binauralDecoder.vstinfo",
+										"pluginname" : "BinauralDecoder.vstinfo",
 										"plugindisplayname" : "BinauralDecoder",
 										"pluginsavedname" : "",
 										"pluginsaveduniqueid" : 0,
@@ -127,7 +115,7 @@
 										"filename" : "BinauralDecoder.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "0a2337c0f8bcd1db714f2c6046241090"
+										"snapshotfileid" : "96c3b69d83841f57acbc78d60a2d3872"
 									}
 
 								}
@@ -473,44 +461,8 @@
 							"parsestring" : ""
 						}
 ,
-						"dur" : 						{
-							"label" : "dur",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"randEl" : 						{
-							"label" : "randEl",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"azimuth" : 						{
 							"label" : "azimuth",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"elevation" : 						{
-							"label" : "elevation",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"randAz" : 						{
-							"label" : "randAz",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"maxBin" : 						{
-							"label" : "maxBin",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"attTypeDown" : 						{
-							"label" : "attTypeDown",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -521,20 +473,56 @@
 							"parsestring" : ""
 						}
 ,
-						"OnOff" : 						{
-							"label" : "OnOff",
+						"dur" : 						{
+							"label" : "dur",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
-						"minBin" : 						{
-							"label" : "minBin",
+						"maxBin" : 						{
+							"label" : "maxBin",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
 ,
 						"density" : 						{
 							"label" : "density",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"elevation" : 						{
+							"label" : "elevation",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"OnOff" : 						{
+							"label" : "OnOff",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"randEl" : 						{
+							"label" : "randEl",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"attTypeDown" : 						{
+							"label" : "attTypeDown",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"randAz" : 						{
+							"label" : "randAz",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"minBin" : 						{
+							"label" : "minBin",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -2084,7 +2072,7 @@
 							}
 ,
 							"randEl" : 							{
-								"value" : 3.14
+								"value" : 0.0
 							}
 ,
 							"attTypeDown" : 							{
@@ -2092,7 +2080,7 @@
 							}
 ,
 							"attTypeUp" : 							{
-								"value" : 16.0
+								"value" : 2.0
 							}
 ,
 							"density" : 							{
@@ -2108,11 +2096,11 @@
 							}
 ,
 							"maxBin" : 							{
-								"value" : 114.0
+								"value" : 1208.0
 							}
 ,
 							"minBin" : 							{
-								"value" : 114.0
+								"value" : 1.0
 							}
 ,
 							"azimuth" : 							{
@@ -2120,11 +2108,11 @@
 							}
 ,
 							"attPer" : 							{
-								"value" : 0.1
+								"value" : 0.5
 							}
 ,
 							"randAz" : 							{
-								"value" : 3.14
+								"value" : 0.0
 							}
 ,
 							"dur" : 							{
@@ -3661,7 +3649,7 @@
 										}
 ,
 										"randEl" : 										{
-											"value" : 3.14
+											"value" : 0.0
 										}
 ,
 										"attTypeDown" : 										{
@@ -3669,7 +3657,7 @@
 										}
 ,
 										"attTypeUp" : 										{
-											"value" : 16.0
+											"value" : 2.0
 										}
 ,
 										"density" : 										{
@@ -3685,11 +3673,11 @@
 										}
 ,
 										"maxBin" : 										{
-											"value" : 114.0
+											"value" : 1208.0
 										}
 ,
 										"minBin" : 										{
-											"value" : 114.0
+											"value" : 1.0
 										}
 ,
 										"azimuth" : 										{
@@ -3697,11 +3685,11 @@
 										}
 ,
 										"attPer" : 										{
-											"value" : 0.1
+											"value" : 0.5
 										}
 ,
 										"randAz" : 										{
-											"value" : 3.14
+											"value" : 0.0
 										}
 ,
 										"dur" : 										{
@@ -4087,13 +4075,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"source" : [ "obj-20", 0 ]
 				}
 
 			}
