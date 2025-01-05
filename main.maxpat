@@ -455,62 +455,8 @@
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "list" ],
 					"patching_rect" : [ 51.0, 388.0, 192.0, 22.0 ],
 					"rnboattrcache" : 					{
-						"attTypeUp" : 						{
-							"label" : "attTypeUp",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"azimuth" : 						{
-							"label" : "azimuth",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"attPer" : 						{
-							"label" : "attPer",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"dur" : 						{
-							"label" : "dur",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"maxBin" : 						{
-							"label" : "maxBin",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
 						"density" : 						{
 							"label" : "density",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"elevation" : 						{
-							"label" : "elevation",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"OnOff" : 						{
-							"label" : "OnOff",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"randEl" : 						{
-							"label" : "randEl",
-							"isEnum" : 0,
-							"parsestring" : ""
-						}
-,
-						"attTypeDown" : 						{
-							"label" : "attTypeDown",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -521,8 +467,62 @@
 							"parsestring" : ""
 						}
 ,
+						"attTypeUp" : 						{
+							"label" : "attTypeUp",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"dur" : 						{
+							"label" : "dur",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"randEl" : 						{
+							"label" : "randEl",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"azimuth" : 						{
+							"label" : "azimuth",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"elevation" : 						{
+							"label" : "elevation",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
 						"minBin" : 						{
 							"label" : "minBin",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"maxBin" : 						{
+							"label" : "maxBin",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"attTypeDown" : 						{
+							"label" : "attTypeDown",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"attPer" : 						{
+							"label" : "attPer",
+							"isEnum" : 0,
+							"parsestring" : ""
+						}
+,
+						"OnOff" : 						{
+							"label" : "OnOff",
 							"isEnum" : 0,
 							"parsestring" : ""
 						}
@@ -2096,7 +2096,7 @@
 							}
 ,
 							"maxBin" : 							{
-								"value" : 1208.0
+								"value" : 925.0
 							}
 ,
 							"minBin" : 							{
@@ -2116,7 +2116,7 @@
 							}
 ,
 							"dur" : 							{
-								"value" : 1.0
+								"value" : 3.0
 							}
 ,
 							"__presetid" : "kraise3ord"
@@ -3673,7 +3673,7 @@
 										}
 ,
 										"maxBin" : 										{
-											"value" : 1208.0
+											"value" : 925.0
 										}
 ,
 										"minBin" : 										{
@@ -3693,7 +3693,7 @@
 										}
 ,
 										"dur" : 										{
-											"value" : 1.0
+											"value" : 3.0
 										}
 ,
 										"__presetid" : "kraise3ord"

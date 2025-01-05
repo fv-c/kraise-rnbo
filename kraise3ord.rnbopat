@@ -1421,19 +1421,19 @@
 					"patching_rect" : [ 1330.0, 98.0, 229.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
+						"enum" : "",
 						"displayname" : "",
 						"steps" : 0.0,
 						"preset" : 1,
-						"fromnormalized" : "",
 						"tonormalized" : "",
-						"ctlin" : 0.0,
-						"exponent" : 1.0,
-						"enum" : "",
+						"fromnormalized" : "",
 						"meta" : "",
 						"unit" : "",
-						"displayorder" : "-",
+						"ctlin" : 0.0,
+						"exponent" : 1.0,
+						"order" : "0",
 						"sendinit" : 1,
-						"order" : "0"
+						"displayorder" : "-"
 					}
 ,
 					"rnbo_serial" : 1,
@@ -2134,7 +2134,7 @@
 ,
 					"rnbo_serial" : 1,
 					"rnbo_uniqueid" : "message_obj-21",
-					"text" : "360"
+					"text" : "500"
 				}
 
 			}
@@ -2148,19 +2148,19 @@
 					"patching_rect" : [ 799.0, 209.0, 198.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
+						"enum" : "",
 						"displayname" : "",
 						"steps" : 0.0,
 						"preset" : 1,
-						"fromnormalized" : "",
 						"tonormalized" : "",
-						"ctlin" : 0.0,
-						"exponent" : 1.0,
-						"enum" : "",
+						"fromnormalized" : "",
 						"meta" : "",
 						"unit" : "",
-						"displayorder" : "-",
+						"ctlin" : 0.0,
+						"exponent" : 1.0,
+						"order" : "0",
 						"sendinit" : 1,
-						"order" : "0"
+						"displayorder" : "-"
 					}
 ,
 					"rnbo_serial" : 2,
@@ -2566,19 +2566,19 @@
 					"patching_rect" : [ 785.0, 184.0, 202.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
+						"enum" : "",
 						"displayname" : "",
 						"steps" : 0.0,
 						"preset" : 1,
-						"fromnormalized" : "",
 						"tonormalized" : "",
-						"ctlin" : 0.0,
-						"exponent" : 1.0,
-						"enum" : "",
+						"fromnormalized" : "",
 						"meta" : "",
 						"unit" : "",
-						"displayorder" : "-",
+						"ctlin" : 0.0,
+						"exponent" : 1.0,
+						"order" : "0",
 						"sendinit" : 1,
-						"order" : "0"
+						"displayorder" : "-"
 					}
 ,
 					"rnbo_serial" : 3,
@@ -3161,9 +3161,9 @@
 					"patching_rect" : [ 1534.0, 943.0, 95.500000000000227, 23.0 ],
 					"rnbo_classname" : "poke",
 					"rnbo_extra_attributes" : 					{
+						"boundmode" : "ignore",
 						"indexmode" : "samples",
 						"overdubmode" : "mix",
-						"boundmode" : "ignore",
 						"channelmode" : "ignore"
 					}
 ,
@@ -3475,7 +3475,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "const POLYPHONY = 500;\r\n\r\n@state voice = 1;\r\n@state voices = new buffer(\"voices\");\r\n\r\n\r\nlet status = peek(voices,(voice-1));\r\n\r\nlet sum = 0;\r\n\r\n//let bang = in1;\r\nlet lst = listin1;\r\n\r\nfor (var i = 0; i < dim(voices); i += 1)\r\n{\r\n\tlet controlstatus = peek(voices,i);\r\n\tsum += 1-controlstatus[0];\r\n}\r\nout3 = sum;\r\n\r\nif (status[0] == 1) {\r\n\tout2 = voice;\r\n\tlistout1 = lst;\r\n\tif (voice < POLYPHONY) {\r\n\t\tvoice += 1;\r\n\t}\r\n} else {\r\n\tvoice = voice;\r\n}\r\n\r\nif (voice == POLYPHONY) {\r\n\tvoice = 1;\r\n\t}",
+					"code" : "const POLYPHONY = 500;\r\n\r\n@state voice = 1;\r\n@state voices = new buffer(\"voices\");\r\n//@state voices = new buffer(500, {channels: 1, fill: 1});\r\n\r\n\r\nlet status = peek(voices,(voice-1));\r\n\r\nlet sum = 0;\r\n\r\n//let bang = in1;\r\nlet lst = listin1;\r\n\r\nfor (var i = 0; i < dim(voices); i += 1)\r\n{\r\n\tlet controlstatus = peek(voices,i);\r\n\tsum += 1-controlstatus[0];\r\n}\r\nout3 = sum;\r\n\r\nif (status[0] == 1) {\r\n\tout2 = voice;\r\n\tlistout1 = lst;\r\n\tif (voice < POLYPHONY) {\r\n\t\tvoice += 1;\r\n\t}\r\n} else {\r\n\tvoice = voice;\r\n}\r\n\r\nif (voice == POLYPHONY) {\r\n\tvoice = 1;\r\n\t}",
 					"fontface" : 0,
 					"fontname" : "<Monospaced>",
 					"fontsize" : 12.0,
@@ -3487,7 +3487,7 @@
 					"patching_rect" : [ 687.0, 261.0, 434.0, 514.0 ],
 					"rnbo_classname" : "codebox",
 					"rnbo_extra_attributes" : 					{
-						"code" : "const POLYPHONY = 500;\r\n\r\n@state voice = 1;\r\n@state voices = new buffer(\"voices\");\r\n\r\n\r\nlet status = peek(voices,(voice-1));\r\n\r\nlet sum = 0;\r\n\r\n//let bang = in1;\r\nlet lst = listin1;\r\n\r\nfor (var i = 0; i < dim(voices); i += 1)\r\n{\r\n\tlet controlstatus = peek(voices,i);\r\n\tsum += 1-controlstatus[0];\r\n}\r\nout3 = sum;\r\n\r\nif (status[0] == 1) {\r\n\tout2 = voice;\r\n\tlistout1 = lst;\r\n\tif (voice < POLYPHONY) {\r\n\t\tvoice += 1;\r\n\t}\r\n} else {\r\n\tvoice = voice;\r\n}\r\n\r\nif (voice == POLYPHONY) {\r\n\tvoice = 1;\r\n\t}",
+						"code" : "const POLYPHONY = 500;\r\n\r\n@state voice = 1;\r\n@state voices = new buffer(\"voices\");\r\n//@state voices = new buffer(500, {channels: 1, fill: 1});\r\n\r\n\r\nlet status = peek(voices,(voice-1));\r\n\r\nlet sum = 0;\r\n\r\n//let bang = in1;\r\nlet lst = listin1;\r\n\r\nfor (var i = 0; i < dim(voices); i += 1)\r\n{\r\n\tlet controlstatus = peek(voices,i);\r\n\tsum += 1-controlstatus[0];\r\n}\r\nout3 = sum;\r\n\r\nif (status[0] == 1) {\r\n\tout2 = voice;\r\n\tlistout1 = lst;\r\n\tif (voice < POLYPHONY) {\r\n\t\tvoice += 1;\r\n\t}\r\n} else {\r\n\tvoice = voice;\r\n}\r\n\r\nif (voice == POLYPHONY) {\r\n\tvoice = 1;\r\n\t}",
 						"safemath" : 1,
 						"hot" : 0
 					}
@@ -3860,19 +3860,19 @@
 					"patching_rect" : [ 771.0, 159.0, 213.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
+						"enum" : "",
 						"displayname" : "",
 						"steps" : 0.0,
 						"preset" : 1,
-						"fromnormalized" : "",
 						"tonormalized" : "",
-						"ctlin" : 0.0,
-						"exponent" : 1.0,
-						"enum" : "",
+						"fromnormalized" : "",
 						"meta" : "",
 						"unit" : "",
-						"displayorder" : "-",
+						"ctlin" : 0.0,
+						"exponent" : 1.0,
+						"order" : "0",
 						"sendinit" : 1,
-						"order" : "0"
+						"displayorder" : "-"
 					}
 ,
 					"rnbo_serial" : 4,
@@ -4278,19 +4278,19 @@
 					"patching_rect" : [ 757.0, 134.0, 207.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
+						"enum" : "",
 						"displayname" : "",
 						"steps" : 0.0,
 						"preset" : 1,
-						"fromnormalized" : "",
 						"tonormalized" : "",
-						"ctlin" : 0.0,
-						"exponent" : 1.0,
-						"enum" : "",
+						"fromnormalized" : "",
 						"meta" : "",
 						"unit" : "",
-						"displayorder" : "-",
+						"ctlin" : 0.0,
+						"exponent" : 1.0,
+						"order" : "0",
 						"sendinit" : 1,
-						"order" : "0"
+						"displayorder" : "-"
 					}
 ,
 					"rnbo_serial" : 5,
@@ -4696,18 +4696,18 @@
 					"patching_rect" : [ 687.0, 9.0, 227.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
+						"enum" : "",
 						"displayname" : "",
 						"preset" : 1,
-						"fromnormalized" : "",
 						"tonormalized" : "",
-						"ctlin" : 0.0,
-						"exponent" : 1.0,
-						"enum" : "",
+						"fromnormalized" : "",
 						"meta" : "",
 						"unit" : "",
-						"displayorder" : "-",
+						"ctlin" : 0.0,
+						"exponent" : 1.0,
+						"order" : "0",
 						"sendinit" : 1,
-						"order" : "0"
+						"displayorder" : "-"
 					}
 ,
 					"rnbo_serial" : 6,
@@ -6738,9 +6738,9 @@
 										"receivemode" : "local",
 										"polyphony" : -1.0,
 										"args" : [  ],
+										"voicecontrol" : "simple",
 										"notecontroller" : 0,
-										"exposevoiceparams" : 0,
-										"voicecontrol" : "simple"
+										"exposevoiceparams" : 0
 									}
 ,
 									"rnbo_serial" : 1,
@@ -7502,9 +7502,9 @@
 									"patching_rect" : [ 50.0, 368.0, 87.0, 23.0 ],
 									"rnbo_classname" : "peek",
 									"rnbo_extra_attributes" : 									{
+										"boundmode" : "ignore",
 										"indexmode" : "samples",
 										"interp" : "none",
-										"boundmode" : "ignore",
 										"channelmode" : "ignore"
 									}
 ,
@@ -8525,9 +8525,9 @@
 						"receivemode" : "local",
 						"polyphony" : -1.0,
 						"args" : [  ],
+						"voicecontrol" : "simple",
 						"notecontroller" : 0,
-						"exposevoiceparams" : 0,
-						"voicecontrol" : "simple"
+						"exposevoiceparams" : 0
 					}
 ,
 					"rnbo_serial" : 1,
@@ -8906,9 +8906,9 @@
 					"patching_rect" : [ 1192.0, 504.0, 56.0, 23.0 ],
 					"rnbo_classname" : "poke",
 					"rnbo_extra_attributes" : 					{
+						"boundmode" : "ignore",
 						"indexmode" : "samples",
 						"overdubmode" : "mix",
-						"boundmode" : "ignore",
 						"channelmode" : "ignore"
 					}
 ,
@@ -9144,19 +9144,19 @@
 					"patching_rect" : [ 1315.0, 73.0, 213.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
+						"enum" : "",
 						"displayname" : "",
 						"steps" : 0.0,
 						"preset" : 1,
-						"fromnormalized" : "",
 						"tonormalized" : "",
-						"ctlin" : 0.0,
-						"exponent" : 1.0,
-						"enum" : "",
+						"fromnormalized" : "",
 						"meta" : "",
 						"unit" : "",
-						"displayorder" : "-",
+						"ctlin" : 0.0,
+						"exponent" : 1.0,
+						"order" : "0",
 						"sendinit" : 1,
-						"order" : "0"
+						"displayorder" : "-"
 					}
 ,
 					"rnbo_serial" : 7,
@@ -9562,19 +9562,19 @@
 					"patching_rect" : [ 1300.0, 48.0, 184.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
+						"enum" : "",
 						"displayname" : "",
 						"steps" : 0.0,
 						"preset" : 1,
-						"fromnormalized" : "",
 						"tonormalized" : "",
-						"ctlin" : 0.0,
-						"exponent" : 1.0,
-						"enum" : "",
+						"fromnormalized" : "",
 						"meta" : "",
 						"unit" : "",
-						"displayorder" : "-",
+						"ctlin" : 0.0,
+						"exponent" : 1.0,
+						"order" : "0",
 						"sendinit" : 1,
-						"order" : "0"
+						"displayorder" : "-"
 					}
 ,
 					"rnbo_serial" : 8,
@@ -9980,10 +9980,10 @@
 					"patching_rect" : [ 1315.0, 610.0, 176.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
+						"fill" : "",
 						"file" : "",
 						"samplerate" : 0.0,
-						"type" : "",
-						"fill" : ""
+						"type" : ""
 					}
 ,
 					"rnbo_serial" : 2,
@@ -10281,19 +10281,19 @@
 					"patching_rect" : [ 715.0, 59.0, 190.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
+						"enum" : "",
 						"displayname" : "",
 						"steps" : 0.0,
 						"preset" : 1,
-						"fromnormalized" : "",
 						"tonormalized" : "",
-						"ctlin" : 0.0,
-						"exponent" : 1.0,
-						"enum" : "",
+						"fromnormalized" : "",
 						"meta" : "",
 						"unit" : "",
-						"displayorder" : "-",
+						"ctlin" : 0.0,
+						"exponent" : 1.0,
+						"order" : "0",
 						"sendinit" : 1,
-						"order" : "0"
+						"displayorder" : "-"
 					}
 ,
 					"rnbo_serial" : 9,
@@ -10795,19 +10795,19 @@
 					"patching_rect" : [ 743.0, 109.0, 223.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
+						"enum" : "",
 						"displayname" : "",
 						"steps" : 0.0,
 						"preset" : 1,
-						"fromnormalized" : "",
 						"tonormalized" : "",
-						"ctlin" : 0.0,
-						"exponent" : 1.0,
-						"enum" : "",
+						"fromnormalized" : "",
 						"meta" : "",
 						"unit" : "",
-						"displayorder" : "-",
+						"ctlin" : 0.0,
+						"exponent" : 1.0,
+						"order" : "0",
 						"sendinit" : 1,
-						"order" : "0"
+						"displayorder" : "-"
 					}
 ,
 					"rnbo_serial" : 10,
@@ -11213,19 +11213,19 @@
 					"patching_rect" : [ 729.0, 84.0, 199.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
+						"enum" : "",
 						"displayname" : "",
 						"steps" : 0.0,
 						"preset" : 1,
-						"fromnormalized" : "",
 						"tonormalized" : "",
-						"ctlin" : 0.0,
-						"exponent" : 1.0,
-						"enum" : "",
+						"fromnormalized" : "",
 						"meta" : "",
 						"unit" : "",
-						"displayorder" : "-",
+						"ctlin" : 0.0,
+						"exponent" : 1.0,
+						"order" : "0",
 						"sendinit" : 1,
-						"order" : "0"
+						"displayorder" : "-"
 					}
 ,
 					"rnbo_serial" : 11,
@@ -12927,8 +12927,8 @@
 									"patching_rect" : [ 436.0, 161.5, 50.0, 23.0 ],
 									"rnbo_classname" : "number",
 									"rnbo_extra_attributes" : 									{
-										"minimum" : "<none>",
 										"maximum" : "<none>",
+										"minimum" : "<none>",
 										"preset" : 0,
 										"order" : "",
 										"initialFormat" : "float"
@@ -13823,8 +13823,8 @@
 									"patching_rect" : [ 44.0, 265.0, 113.0, 37.0 ],
 									"rnbo_classname" : "peek~",
 									"rnbo_extra_attributes" : 									{
-										"indexmode" : "samples",
 										"boundmode" : "ignore",
+										"indexmode" : "samples",
 										"channels" : 1.0,
 										"channelmode" : "ignore"
 									}
@@ -21230,19 +21230,19 @@
 					"patching_rect" : [ 701.0, 34.0, 204.0, 23.0 ],
 					"rnbo_classname" : "param",
 					"rnbo_extra_attributes" : 					{
+						"enum" : "",
 						"displayname" : "",
 						"steps" : 0.0,
 						"preset" : 1,
-						"fromnormalized" : "",
 						"tonormalized" : "",
-						"ctlin" : 0.0,
-						"exponent" : 1.0,
-						"enum" : "",
+						"fromnormalized" : "",
 						"meta" : "",
 						"unit" : "",
-						"displayorder" : "-",
+						"ctlin" : 0.0,
+						"exponent" : 1.0,
+						"order" : "0",
 						"sendinit" : 1,
-						"order" : "0"
+						"displayorder" : "-"
 					}
 ,
 					"rnbo_serial" : 12,
@@ -21648,10 +21648,10 @@
 					"patching_rect" : [ 1315.0, 580.0, 198.0, 23.0 ],
 					"rnbo_classname" : "buffer~",
 					"rnbo_extra_attributes" : 					{
+						"fill" : "",
 						"file" : "",
 						"samplerate" : 0.0,
-						"type" : "",
-						"fill" : ""
+						"type" : ""
 					}
 ,
 					"rnbo_serial" : 3,
